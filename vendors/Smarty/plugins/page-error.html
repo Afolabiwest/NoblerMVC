@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	{$message}
+</title>
+<style>
+body{
+	font-family: Arial, Sans-serif, verdana;
+	
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:100;
+}
+.container{
+	width:90vw;
+	margin:auto;
+	display:block;
+	position:relative;
+	top:0px;
+	left:0px;
+	height: 92vh; 
+}
+.message{
+	margin:0;
+	display:block; 
+	width: 90%; 
+	text-align:center; 
+	position:absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="message">
+		<h1>
+			{$error_no}: {$error_str}
+		</h1>
+		<p>File: {$error_file}</p>
+		<p>Line: {$error_line}</p>
+		
+	</div>
+</div>
+
+
+</body>
+</html>
